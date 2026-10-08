@@ -9,7 +9,7 @@
 static const char *TAG = "SMART_HOME";
 
 #define LIGHT_THRESHOLD 2857
-#define LAMP_PIN GPIO_NUM_18
+#define LAMP_PIN GPIO_NUM_26
 
 extern "C" void app_main(void)
 {
