@@ -1,7 +1,9 @@
+
 idf_component_register(
     SRCS
         "main.cpp"
         "light_sensor.cpp"
+        "relay_control.cpp"
     INCLUDE_DIRS
         "."
         "../include"
