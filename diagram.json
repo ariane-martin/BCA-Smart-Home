@@ -41,7 +41,18 @@
       "top": 153.8,
       "left": 163.2,
       "attrs": {}
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 140,
+      "left": -220,
+      "attrs": {
+        "color": "blue",
+        "label": "Manual Switch"
+      }
     }
+
   ],
   "connections": [
     ["esp:TX", "$serialMonitor:RX", "", []],
@@ -58,7 +69,10 @@
     ["esp:3V3", "relay1:COM", "red", []],
     ["relay1:NO", "r1:1", "green", []],
     ["r1:2", "lamp1:A", "green", []],
-    ["lamp1:C", "esp:GND.1", "black", []]
+    ["lamp1:C", "esp:GND.1", "black", []],
+
+    ["btn1:1.l", "esp:23", "blue", []],
+    ["btn1:2.l", "esp:GND.1", "black", []]
   ],
   "dependencies": {}
 }
